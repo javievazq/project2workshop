@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>multiscroll.js - split multi-scrolling pages plugin</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="multiscroll plugin by Alvaro Trigo. Create divided multi-scrolling pages with two splited vertical layouts or panels." />
+	<meta name="keywords"  content="multiscroll,jquery,alvaro,trigo,plugin,divided,splitscreen,screen,panels,layouts,vertical,split,splited" />
+	<meta name="Resource-type" content="Document" />
+
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />		
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />		
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>	
+	<script type="text/javascript" src="js/jquery.multiscroll.js"></script>
+		<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript">
+	 $(document).ready(function() {
+            $('#myContainer').multiscroll({
+            	sectionsColor: ['#fafafa', '#B30838','#B30838','#B30838','#B30838','#633492', '#633492', '#633492', '#633492'],
+            	anchors: ['home', 'usl', 'teneleven', 'twelvethirteen', 'fourteen', 'mls', 'fifteen', 'sixteen', 'seventeen'],
+            	menu: '#menu',
+            	easing: 'easeOutBack',
+				navigation: true,
+            	loopBottom: true,
+            	loopTop: true
+            });
+        });
+		</script>
+
+	<style>
+		.ms-section{
+			text-align: center;
+		}
+
+		#menu li {
+			display:inline-block;
+			margin: 10px;
+			color: #000;
+			background:#fff;
+			background: rgba(255,255,255, 0.3);
+			-webkit-border-radius: 10px; 
+		            border-radius: 10px; 
+		}
+		#menu li.active{
+			background:#666;
+			background: rgba(255,255,255, 1);
+			color: #000;
+		}
+		#menu li a{
+			text-decoration:none;
+			color: #000;
+		}
+		#menu li.active a:hover{
+			color: #000;
+		}
+		#menu li:hover{
+			background: rgba(255,255,255, 0.8);
+		}
+		#menu li a,
+		#menu li.active a{
+			padding: 9px 18px;
+			display:block;
+		}
+		#menu li.active a{
+			color: #000;
+		}
+		#menu{
+			position:fixed;
+			top:0;
+			left:0;
+			height: 40px;
+			z-index: 70;
+			width: 100%;
+			padding: 0;
+			margin:0;
+		}
+	</style>
+
+</head>
+<body>
+
+
+<ul id="menu">
+	<li data-menuanchor="first"><a href="#home">HOME</a></li>
+	<li data-menuanchor="second"><a href="#usl">USL</a></li>
+	<li data-menuanchor="third"><a href="#mls">MLS</a></li>
+<audio controls>
+  <source src="chant.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</ul>
+
+<div id="myContainer">
+
+	<div class="ms-left">
+		<div class="ms-section" id="left1">
+			<h1 class="wow fadeInLeft" data-wow-delay=".25s" style="color: #633492; font-size: 60px; ">The History of</h1>
+		</div>
+
+		<div class="ms-section" id="left2">	
+			<h1 style="font-size: 150px;">USL</h1>
+			<p >United Soccer League</p>
+		</div>
+
+		<div class="ms-section" id="left1011">
+			<p style=" position: absolute;bottom: 0;">(Midfielder Kevin Molino)</p>
+			<img src="imgs/mol.png" style=" position: absolute; left: 0; bottom: 0; width: 100%;">
+		</div>
+
+		<div class="ms-section" id="left1213">
+			<h1>2012 &amp; 2013</h1>
+			<p class="pleft">The 2012 Orlando City Soccer Club season is the club's second season of existence. They ended the season with winning the league title for the second consecutive year, but they lost in the Playoffs to the Wilmington Hammerheads in the Semi-final 3–4. in 2013 Orlando finished second in the overall regular-season table. They were declared 2013 USL Pro Champions after beating Charlotte Eagles 7–4 in front of 20,886 fans</p>
+		</div>
+
+		<div class="ms-section" id="left14">
+			
+			<img src="imgs/rukus.png" style=" position: absolute; left: 0; bottom: 0; width: 120%;">
+			<p style=" position: absolute;bottom: 0;">(OCSC Supporters group The Iron Lion Firm)</p>
+		</div>
+
+		<div class="ms-section" id="left3">
+			<h1 style="font-size: 150px;">MLS</h1>
+			<p>Major League Soccer</p>
+		</div>
+
+		<div class="ms-section" id="left15">
+			<p style=" position: absolute;bottom: 0;">(Captain Kaka)</p>
+			<img src="imgs/kaka.png" style=" position: absolute; left: 0; bottom: 0; width: 100%;">
+		</div>
+		
+		<div class="ms-section" id="left16">
+			<h1>2016</h1>
+			<p class="pleft">2016 was not a very notible year for the club, ending with the most goals conceded in the league. Adrian Heath (Orlando's coach since 2011) was sacked by Orlando City on July 7, 2016, following a 4–0 defeat against FC Dallas. Hiring of former NYCFC manager Jason Kreis on July 19.</p>
+		</div>
+
+		<div class="ms-section" id="left17">
+			<img src="imgs/ocstadium.png" style=" position: absolute; left: 0; bottom: 0; width: 100%;">
+			<p style=" position: absolute;bottom: 0;">(The New Orlando City Stadium)</p>
+		</div>
+
+	</div>
+	
+	<div class="ms-right">
+		<div class="ms-section" id="right1">
+			<h1 class="wow fadeInRight" data-wow-delay=".65s" style="color: #633492;  font-size: 60px; padding-right: 10px;">Orlando City Soccer</h1>
+		</div>
+
+		<div class="ms-section" id="right2">
+			<img src="imgs/usl.png" width="75%">
+		</div>
+
+		<div class="ms-section" id="right1011">
+			<h1>2011</h1>
+			<p class="pright">The 2011 Orlando City SC season, marked the club's first season in existence, and their first year in the third-tier USL Pro League. Previously, the club was known as the Austin Aztex FC before they were relocated to Orlando, Florida. They won a double, winning the Commissioner's Cup as the top team in the league's regular season, and winning the USL Pro Championship.</p>
+		</div>
+
+		<div class="ms-section" id="right1213">
+			<img style=" position: absolute; right: 0; bottom: 0; width: 100%;" src="imgs/dom.png">
+			<p style=" position: absolute;bottom: 0;">(Midfielder Jamie Watson &amp; Foward Dom Dwyer)</p>
+		</div>
+
+		<div class="ms-section" id="right14">
+			<h1>2014</h1>
+			<p class="pright">The fourth year in the USL Pro was their last in the league. In the preseason they competed in the 2014 Walt Disney World Pro Soccer Classic taking 2nd in their group with 3 draws and drawing in the 3rd place match against the New York Red Bulls. By finishing the season 19–5–4, Orlando City won their 3rd Commissioner's Cup.</p>
+		</div>
+
+		<div class="ms-section" id="right3">
+			<img src="imgs/mls.png" width="75%">
+		</div>
+
+		<div class="ms-section" id="right15">
+			<h1>2015</h1>
+			<p class="pright">Orlando City's first season in Major League Soccer. The clubs first major signing was Bolon de Or winner, Kaka. opened the 2015 MLS season at the Citrus Bowl against the other expansion team for that season, New York City FC. The match ended in a 1–1 draw after Kaká scored an equalizer in the first minute of second half stoppage time.</p>
+		</div>
+
+		<div class="ms-section" id="right16">
+			<img style=" position: absolute; right: 0; bottom: 0; width: 150%;" src="imgs/march.png">
+			<p style=" position: absolute;bottom: 0;">(OCSC Supporters March)</p>		
+		</div>
+
+		<div class="ms-section" id="right17">
+			<h1>2017</h1>
+			<p class="pright">2017 is the third season in the MLS and the first season in the brand new Orlando City Stadium. On January 4, 2017, 49 rainbow-colored seats in Section 12 of the new stadium to permanently honor the victims and families of those affected by the Pulse tragedy on June 12, 2016. The team opened the season with a 1-0 win over New York City FC and is currently in its best start of the season.</p>
+		</div>
+		
+	</div>	
+</div>
+
+</body>
+</html>
+

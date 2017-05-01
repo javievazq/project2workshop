@@ -1,372 +1,327 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-	<title>multiscroll.js - split multi-scrolling pages plugin</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
-	<meta name="description" content="multiscroll plugin by Alvaro Trigo. Create divided multi-scrolling pages with two splited vertical layouts or panels." />
-	<meta name="keywords"  content="multiscroll,jquery,alvaro,trigo,plugin,divided,splitscreen,screen,panels,layouts,vertical,split,splited" />
-	<meta name="Resource-type" content="Document" />
-
-	
-	<link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />		
-	<link rel="stylesheet" type="text/css" href="css/examples.css" />
-	<link rel="stylesheet" type="text/css" href="css/animate.css" />		
-
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
-	<script type="text/javascript" src="js/wow.js"></script>	
-	<script type="text/javascript" src="js/jquery.multiscroll.js"></script>
-		<script type="text/javascript" src="js/init.js"></script>
-	<script type="text/javascript">
-	 $(document).ready(function() {
-            $('#myContainer').multiscroll({
-            	sectionsColor: ['#fafafa', '#B30838','#B30838','#B30838','#B30838','#633492', '#633492', '#633492', '#633492'],
-            	anchors: ['home', 'usl', 'teneleven', 'twelvethirteen', 'fourteen', 'mls', 'fifteen', 'sixteen', 'seventeen'],
-            	menu: '#menu',
-            	easing: 'easeOutBack',
-				navigation: true,
-            	loopBottom: true,
-            	loopTop: true
-            });
-        });
-		</script>
-
-
-</head>
-<body>
-
-
-<ul id="menu">
-	<li data-menuanchor="first"><a href="#home">HOME</a></li>
-	<li data-menuanchor="second"><a href="#usl">USL</a></li>
-	<li data-menuanchor="third"><a href="#mls">MLS</a></li>
-<audio controls>
-  <source src="chant.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-</ul>
-
-<div id="myContainer">
-
-	<div class="ms-left">
-		<div class="ms-section" id="left1">
-			<h1 class="wow fadeInLeft" data-wow-delay=".25s" style="color: #633492; font-size: 60px; padding-left: 100px;">The History of</h1>
-		</div>
-
-		<div class="ms-section" id="left2">	
-			<h1 style="font-size: 150px;">USL</h1>
-			<p >United Soccer League</p>
-		</div>
-
-		<div class="ms-section" id="left1011">
-                                    <ul id='timeline'>
-  <li class='work'>
-    <input class='radio' id='work0' name='works' type='radio' checked>
-    <div class="relative">
-      <label for='work0'>Before Orlando</label>
-      <span class='circle'></span>
-    </div>
-    <div class='content'>
-      <p>
-Previously, the club was known as the Austin Aztex FC before they were relocated to Orlando, Florida. Founded in 2008, the team played in the USL First Division. </div>
-  </li>
-  <li class='work'>
-    <input class='radio' id='work1' name='works' type='radio'>
-    <div class="relative">
-      <label for='work1'>Regular Season</label>
-      <span class='circle'></span>
-    </div>
-    <div class='content'>
-      <p>In there first season in Orlando, the team went on an 11-match undefeated run, closing the first half with a record of 8–1–3. Goalkeeper Miguel Gallardo had a league-high eleven clean sheets. The Lions finished with a 15–3–6 record, winning the 2011 Commissioner's Cup.</p>
-    </div>
-  </li>
-  <li class='work'>
-    <input class='radio' id='work2' name='works' type='radio'>
-    <div class="relative">
-      <label for='work2'>Championship</label>
-      <span class='circle'></span>
-    </div>
-    <div class='content'>
-      <p>
- They won a double, winning the Commissioner's Cup as the top team in the league's regular season, and winning the USL Pro Championship In just their first season in orlando.
-       </p>
-    </div>
-  </li>
-  <li class='work'>
-    <input class='radio' id='work3' name='works' type='radio'>
-    <div class="relative">
-      <label for='work3'>Lamar Hunt U.S. Open Cup</label>
-      <span class='circle'></span>
-    </div>
-    <div class='content'>
-      <p>
-They beat ASC New Stars in the first round, and Charleston Battery of USL Pro in the second round. 
-After taking an early lead in its third round match against FC Dallas, Dallas scored twice and looked to cruise to the
- fourth round. Orlando scored a late equalizer in second half stoppage time, 
- but a game-winner right before the end of play to 
- eliminate the Lions from the Open Cup.
-</p>
-    </div>
-  </li>
-</ul>
-
-		</div>
-
-		<div class="ms-section" id="left1213">
-            <h1>2012 &amp; 2013</h1>
-            <ul id='timeline'>
-            <li class='work'>
-                <input class='radio' id='work4' name='works' type='radio'>
-                <div class="relative">
-                <label for='work4'>2012 Regular Season</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>
-            There were approximately 3,500 season ticket holders for the 2012 season. They ended the season with winning the league title with only one lose in the entire season.     </p>
-                </div>
-            </li>
-            <li class='work'>
-                <input class='radio' id='work5' name='works' type='radio'>
-                <div class="relative">
-                <label for='work5'>Championship</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>
-                    After winning the championship the season before Orlando City was heading in with great confidence. Only to lose against Wilmington Hammerheads 3-4.
-                </p>
-                </div>
-            </li>
-            <li class='work'>
-                <input class='radio' id='work6' name='works' type='radio'>
-                <div class="relative">
-                <label for='work6'>2013 Regular Season</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>
-            This season was the club's third season of existence in Orlando. Orlando finished second in the overall regular-season table.      </p>
-                </div>
-            </li>
-            <li class='work'>
-                <input class='radio' id='work7' name='works' type='radio'>
-                <div class="relative">
-                <label for='work7'>Championship</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>
-            They were declared 2013 USL Pro Champions after beating Charlotte Eagles 7–4 in front of 20,886 fans at the Fifth Third Bank Field at the Citrus Bowl.      </p>
-                </div>
-            </li>
-            </ul>
-		</div>
-
-		<div class="ms-section" id="left14">
-			<h1>2014</h1>
-            <ul id='timeline'>
-            <li class='work'>
-                <input class='radio' id='work10' name='works' type='radio'>
-                <div class="relative">
-                <label for='work10'>Expansion</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>
-            Before the start of the season it was announced that Orlando City would be the next expansion franchise in Major League Soccer, the league's 21st team, to begin play in 2015.The announcement was made at Church Street Station in downtown Orlando, in the old Cheyenne Saloon.
-            </p>
-                </div>
-            </li>
-            <li class='work'>
-                <input class='radio' id='work8' name='works' type='radio'>
-                <div class="relative">
-                <label for='work8'>Regular Season</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>
-            The club's fourth season of existence in Orlando finishing second in the regular season, and their final season before the team was elevated to Major League Soccer.
-                 </p>
-                </div>
-            </li>
-            <li class='work'>
-                <input class='radio' id='work9' name='works' type='radio'>
-                <div class="relative">
-                <label for='work9'>Championship</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>
-                    The team entered the season as the defending USL Pro champions, beating Charlotte Eagles in the Championship Game                </p>
-                </div>
-            </li>
-            </ul>
-
-		</div>
-
-		<div class="ms-section" id="left3">
-			<h1 style="font-size: 150px;">MLS</h1>
-			<p>Major League Soccer</p>
-		</div>
-
-		<div class="ms-section" id="left15">
-            <h1>2015</h1>
-            <ul id='timeline'>
-            <li class='work'>
-                <input class='radio' id='work12' name='works' type='radio'>
-                <div class="relative">
-                <label for='work12'>Balón De Oro Winner Kaká</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>
-                    Before the start of the season it wasa announced that Orlando Ciy would be signing former Balón de oro winner Kaká.
-            </p>
-                </div>
-            </li>
-            <li class='work'>
-                <input class='radio' id='work13' name='works' type='radio'>
-                <div class="relative">
-                <label for='work13'>Inaugural Game</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>
-Orlando City opened the 2015 MLS season at the Citrus Bowl against  New York City FC. The match ended in a 1–1 draw after Kaká scored an equalizer. 
-The attendance of 62,510 was the largest crowd to see a soccer match at the Citrus Bowl, the second-largest attendance ever for an MLS team's inaugural home match.                 </p>
-                </div>
-            </li>
-            <li class='work'>
-                <input class='radio' id='work14' name='works' type='radio'>
-                <div class="relative">
-                <label for='work14'>Regular Season</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>
-                    They ended the season with a pretty average outcome. Ending up in 7th in the east with a 12-8-14 Record. They did not qualify for the playoffs.
-                    </p>
-                </div>
-            </li>
-            </ul>
-
-		</div>
-		
-		<div class="ms-section" id="left16">
-			<h1>2016</h1>
-            <ul id='timeline'>
-            <li class='work'>
-                <input class='radio' id='work15' name='works' type='radio'>
-                <div class="relative">
-                <label for='work15'>Regular Season</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>2016 was not a very notible year for the club, ending with the most goals conceded in the league. The season ended with 9-14-11 record also the most ties in the league.</p>
-
-                </div>
-            </li>
-            <li class='work'>
-                <input class='radio' id='work16' name='works' type='radio'>
-                <div class="relative">
-                <label for='work16'>Coaching Staff</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>Adrian Heath, who was the coach of the team since before they moved to Orlando Was Sacked in the middle of the season. Orlando Eventualy hired former NYFC coach Jason Kreis.</p>
-                </div>
-            </li>
-            </ul>		
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>The History of Orlando City</title>
+      <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+      <link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" href="css/animate.css" />
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+      <script type="text/javascript" src="js/wow.js"></script>	
+      <script type="text/javascript" src="js/jquery.multiscroll.js"></script>
+      <script type="text/javascript" src="js/init.js"></script>
+   </head>
+   <body>
+      <ul id="menu">
+         <li data-menuanchor="first"><a href="#home">HOME</a></li>
+         <li data-menuanchor="second"><a href="#usl">USL</a></li>
+         <li data-menuanchor="third"><a href="#mls">MLS</a></li>
+         <audio controls autoplay loop>
+            <source src="chant.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+         </audio>
+      </ul>
+      <div id="myContainer">
+         <div class="ms-left">
+            <div class="ms-section" id="left1">
+               <h1 class="wow fadeInLeft" data-wow-delay=".25s" style="color: #633492; font-size: 60px; padding-left: 100px;">The History of</h1>
             </div>
-
-		<div class="ms-section" id="left17">
-            <h1>2017</h1>
-                        <ul id='timeline'>
-            <li class='work'>
-                <input class='radio' id='work17' name='works' type='radio'>
-                <div class="relative">
-                <label for='work17'>Winning Streak </label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>Orlando City is starting off the season the best they have in their MLS history. They have a 5 home winning streak and have yet to be beaten at home so far.</p>
-
-                </div>
-            </li>
-            <li class='work'>
-                <input class='radio' id='work18' name='works' type='radio'>
-                <div class="relative">
-                <label for='work18'>Jason Kreis</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>The new Orlando City Coach Jason Kreis has brought a whole new dynamic to the team. With a team first attitude and making sure the team plays together.</p>
-                </div>
-            </li>
-            <li class='work'>
-                <input class='radio' id='work19' name='works' type='radio'>
-                <div class="relative">
-                <label for='work19'>Top of the League</label>
-                <span class='circle'></span>
-                </div>
-                <div class='content'>
-                <p>As this is written, Orlando City is at the top of the league with 6 wins and only 1 loss. This is the best start they have ever had in the MLS. Compared to the season before where it took mid season for them to get 6 wins. </p>
-                </div>
-            </li>
-            </ul>
-		</div>
-
-	</div>
-<!-- ____________________________________________This is the marker_________________________________________________ -->
-	<div class="ms-right">
-		<div class="ms-section" id="right1">
-			<h1 class="wow fadeInRight" data-wow-delay=".65s" style="color: #633492;  font-size: 60px; padding-right: 100px;">Orlando City Soccer</h1>
-		</div>
-
-		<div class="ms-section" id="right2">
-			<img src="imgs/usl.png" width="75%">
-		</div>
-
-		<div class="ms-section" id="right1011">
-					<p style=" position: absolute;bottom: 0;">(Midfielder Kevin Molino)</p>
-			<img src="imgs/mol.png" style=" position: absolute; right: 0; bottom: 0; width: 100%;"></div>
-
-		<div class="ms-section" id="right1213">
-			<img style=" position: absolute; right: 0; bottom: 0; width: 100%;" src="imgs/dom.png">
-			<p style=" position: absolute;bottom: 0;">(Midfielder Jamie Watson &amp; Foward Dom Dwyer)</p>
-		</div>
-
-		<div class="ms-section" id="right14">
-            			<img src="imgs/rukus.png" style=" position: absolute; right: 0; bottom: 0; width: 100%;">
-			<p style=" position: absolute;bottom: 0;">(OCSC Supporters group The Iron Lion Firm)</p>
-			</div>
-
-		<div class="ms-section" id="right3">
-			<img src="imgs/mls.png" width="75%">
-		</div>
-
-		<div class="ms-section" id="right15">
-			<p style=" position: absolute;bottom: 0;">(Captain Kaká)</p>
-			<img src="imgs/kaka.png" style=" position: absolute; right: 0; bottom: 0; width: 100%;">
-		</div>
-
-		<div class="ms-section" id="right16">
-			<img style=" position: absolute; right: 0; bottom: 0; width: 110%;" src="imgs/march.png">
-			<p style=" position: absolute;bottom: 0;">(OCSC Supporters March)</p>		
-		</div>
-
-		<div class="ms-section" id="right17">
-			<img src="imgs/ocstadium.png" style=" position: absolute; right: 0; bottom: 0; width: 100%;">
-			<p style=" position: absolute;bottom: 0;">(The New Orlando City Stadium)</p>
-        </div>
-		
-	</div>	
-</div>
-
-</body>
+            <div class="ms-section" id="left2">
+               <h1 style="font-size: 150px;">USL</h1>
+               <p >United Soccer League</p>
+            </div>
+            <div class="ms-section" id="left1011">
+               <ul id='timeline'>
+                  <li class='work'>
+                     <input class='radio' id='work0' name='works' type='radio' checked>
+                     <div class="relative">
+                        <label for='work0'>Before Orlando</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>
+                           Previously, the club was known as the Austin Aztex FC before they were relocated to Orlando, Florida. Founded in 2008, the team played in the USL First Division. 
+                     </div>
+                  </li>
+                  <li class='work'>
+                     <input class='radio' id='work1' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work1'>Regular Season</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>In there first season in Orlando, the team went on an 11-match undefeated run, closing the first half with a record of 8–1–3. Goalkeeper Miguel Gallardo had a league-high eleven clean sheets. The Lions finished with a 15–3–6 record, winning the 2011 Commissioner's Cup.</p>
+                     </div>
+                  </li>
+                  <li class='work'>
+                     <input class='radio' id='work2' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work2'>Championship</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>
+                           They won a double, winning the Commissioner's Cup as the top team in the league's regular season, and winning the USL Pro Championship In just their first season in orlando.
+                        </p>
+                     </div>
+                  </li>
+                  <li class='work'>
+                     <input class='radio' id='work3' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work3'>Lamar Hunt U.S. Open Cup</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>
+                           They beat ASC New Stars in the first round, and Charleston Battery of USL Pro in the second round. 
+                           After taking an early lead in its third round match against FC Dallas, Dallas scored twice and looked to cruise to the
+                           fourth round. Orlando scored a late equalizer in second half stoppage time, 
+                           but a game-winner right before the end of play to 
+                           eliminate the Lions from the Open Cup.
+                        </p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div class="ms-section" id="left1213">
+               <h1>2012 &amp; 2013</h1>
+               <ul id='timeline'>
+                  <li class='work'>
+                     <input class='radio' id='work4' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work4'>2012 Regular Season</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>
+                           There were approximately 3,500 season ticket holders for the 2012 season. They ended the season with winning the league title with only one lose in the entire season.     
+                        </p>
+                     </div>
+                  </li>
+                  <li class='work'>
+                     <input class='radio' id='work5' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work5'>Championship</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>
+                           After winning the championship the season before Orlando City was heading in with great confidence. Only to lose against Wilmington Hammerheads 3-4.
+                        </p>
+                     </div>
+                  </li>
+                  <li class='work'>
+                     <input class='radio' id='work6' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work6'>2013 Regular Season</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>
+                           This season was the club's third season of existence in Orlando. Orlando finished second in the overall regular-season table.      
+                        </p>
+                     </div>
+                  </li>
+                  <li class='work'>
+                     <input class='radio' id='work7' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work7'>Championship</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>
+                           They were declared 2013 USL Pro Champions after beating Charlotte Eagles 7–4 in front of 20,886 fans at the Fifth Third Bank Field at the Citrus Bowl.      
+                        </p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div class="ms-section" id="left14">
+               <h1>2014</h1>
+               <ul id='timeline'>
+                  <li class='work'>
+                     <input class='radio' id='work10' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work10'>Expansion</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>
+                           Before the start of the season it was announced that Orlando City would be the next expansion franchise in Major League Soccer, the league's 21st team, to begin play in 2015.The announcement was made at Church Street Station in downtown Orlando, in the old Cheyenne Saloon.
+                        </p>
+                     </div>
+                  </li>
+                  <li class='work'>
+                     <input class='radio' id='work8' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work8'>Regular Season</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>
+                           The club's fourth season of existence in Orlando finishing second in the regular season, and their final season before the team was elevated to Major League Soccer.
+                        </p>
+                     </div>
+                  </li>
+                  <li class='work'>
+                     <input class='radio' id='work9' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work9'>Championship</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>
+                           The team entered the season as the defending USL Pro champions, beating Charlotte Eagles in the Championship Game                
+                        </p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div class="ms-section" id="left3">
+               <h1 style="font-size: 150px;">MLS</h1>
+               <p>Major League Soccer</p>
+            </div>
+            <div class="ms-section" id="left15">
+               <h1>2015</h1>
+               <ul id='timeline'>
+                  <li class='work'>
+                     <input class='radio' id='work12' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work12'>Balón De Oro Winner Kaká</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>
+                           Before the start of the season it wasa announced that Orlando Ciy would be signing former Balón de oro winner Kaká.
+                        </p>
+                     </div>
+                  </li>
+                  <li class='work'>
+                     <input class='radio' id='work13' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work13'>Inaugural Game</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>
+                           Orlando City opened the 2015 MLS season at the Citrus Bowl against  New York City FC. The match ended in a 1–1 draw after Kaká scored an equalizer. 
+                           The attendance of 62,510 was the largest crowd to see a soccer match at the Citrus Bowl, the second-largest attendance ever for an MLS team's inaugural home match.                 
+                        </p>
+                     </div>
+                  </li>
+                  <li class='work'>
+                     <input class='radio' id='work14' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work14'>Regular Season</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>
+                           They ended the season with a pretty average outcome. Ending up in 7th in the east with a 12-8-14 Record. They did not qualify for the playoffs.
+                        </p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div class="ms-section" id="left16">
+               <h1>2016</h1>
+               <ul id='timeline'>
+                  <li class='work'>
+                     <input class='radio' id='work15' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work15'>Regular Season</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>2016 was not a very notible year for the club, ending with the most goals conceded in the league. The season ended with 9-14-11 record also the most ties in the league.</p>
+                     </div>
+                  </li>
+                  <li class='work'>
+                     <input class='radio' id='work16' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work16'>Coaching Staff</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>Adrian Heath, who was the coach of the team since before they moved to Orlando Was Sacked in the middle of the season. Orlando Eventualy hired former NYFC coach Jason Kreis.</p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div class="ms-section" id="left17">
+               <h1>2017</h1>
+               <ul id='timeline'>
+                  <li class='work'>
+                     <input class='radio' id='work17' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work17'>Winning Streak </label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>Orlando City is starting off the season the best they have in their MLS history. They have a 5 home winning streak and have yet to be beaten at home so far.</p>
+                     </div>
+                  </li>
+                  <li class='work'>
+                     <input class='radio' id='work18' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work18'>Jason Kreis</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>The new Orlando City Coach Jason Kreis has brought a whole new dynamic to the team. With a team first attitude and making sure the team plays together.</p>
+                     </div>
+                  </li>
+                  <li class='work'>
+                     <input class='radio' id='work19' name='works' type='radio'>
+                     <div class="relative">
+                        <label for='work19'>Top of the League</label>
+                        <span class='circle'></span>
+                     </div>
+                     <div class='content'>
+                        <p>As this is written, Orlando City is at the top of the league with 6 wins and only 1 loss. This is the best start they have ever had in the MLS. Compared to the season before where it took mid season for them to get 6 wins. </p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <!-- ____________________________________________This is the marker_________________________________________________ -->
+         <div class="ms-right">
+            <div class="ms-section" id="right1">
+               <h1 class="wow fadeInRight" data-wow-delay=".65s" style="color: #633492;  font-size: 60px; padding-right: 100px;">Orlando City Soccer</h1>
+            </div>
+            <div class="ms-section" id="right2">
+               <img src="imgs/usl.png" width="75%">
+            </div>
+            <div class="ms-section" id="right1011">
+               <p style=" position: absolute;bottom: 0;">(Midfielder Kevin Molino)</p>
+               <img src="imgs/mol.png" style=" position: absolute; right: 0; bottom: 0; width: 100%;">
+            </div>
+            <div class="ms-section" id="right1213">
+               <img style=" position: absolute; right: 0; bottom: 0; width: 100%;" src="imgs/dom.png">
+               <p style=" position: absolute;bottom: 0;">(Midfielder Jamie Watson &amp; Foward Dom Dwyer)</p>
+            </div>
+            <div class="ms-section" id="right14">
+               <img src="imgs/rukus.png" style=" position: absolute; right: 0; bottom: 0; width: 100%;">
+               <p style=" position: absolute;bottom: 0;">(OCSC Supporters group The Iron Lion Firm)</p>
+            </div>
+            <div class="ms-section" id="right3">
+               <img src="imgs/mls.png" width="75%">
+            </div>
+            <div class="ms-section" id="right15">
+               <p style=" position: absolute;bottom: 0;">(Captain Kaká)</p>
+               <img src="imgs/kaka.png" style=" position: absolute; right: 0; bottom: 0; width: 100%;">
+            </div>
+            <div class="ms-section" id="right16">
+               <img style=" position: absolute; right: 0; bottom: 0; width: 110%;" src="imgs/march.png">
+               <p style=" position: absolute;bottom: 0;">(OCSC Supporters March)</p>
+            </div>
+            <div class="ms-section" id="right17">
+               <img src="imgs/ocstadium.png" style=" position: absolute; right: 0; bottom: 0; width: 100%;">
+               <p style=" position: absolute;bottom: 0;">(The New Orlando City Stadium)</p>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
-
